@@ -5,22 +5,36 @@ file_gen () {
   if [ -f $1 ];
   then
     echo_log "File exists"
-    full_path=$1
+    full_path=$(realpath $1)
     #base_name=${full_path##*/}
     base_name="$(basename $full_path)"
     name=${base_name%%.*}
     dir_name="$(basename $(dirname $full_path))"
-    echo_log $name
-    echo_log $dir_name
-    touch target/"$dir_name"_"$name".o
+    #echo_log $name
+    #echo_log $dir_name
+    output_file_name="$dir_name"_"$name".vvp
+    output_file="$GIT_ROOT/target/$output_file_name"
+        
+    ERROR_LOG=$(iverilog -o $output_file -c $full_path 2>&1 > /dev/null)
+
+    echo_log "$ERROR_LOG"
+
+    if [ "$ERROR_LOG" == "" ];
+    then
+        echo_log "Compiled Output File : $output_file"
+    else
+        echo_log "ERROR : Compilation Failed"
+    fi
+
+
   else
     echo_log "File doesn't exist"
   fi
 }
 
 echo_log () {
-    echo $1
-    echo $1 >> $LOG_FILE
+    echo "$1"
+    echo "$1" >> $LOG_FILE
 }
 
 exit_shell () {
