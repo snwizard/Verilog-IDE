@@ -1,0 +1,5 @@
+#All files and folder other than below are ignored
+/*
+!setup/
+!src/
+!README.md
