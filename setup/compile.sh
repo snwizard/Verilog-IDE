@@ -14,9 +14,15 @@ file_gen () {
     #echo_log $dir_name
     output_file_name="$dir_name"_"$name".vvp
     output_file="$GIT_ROOT/target/$output_file_name"
-        
-    ERROR_LOG=$(iverilog -o $output_file -c $full_path 2>&1 > /dev/null)
+     
+    #cd to the import folder path
+    import_dir="$(dirname $full_path)"
+    cd $import_dir
 
+    #compile  
+    ERROR_LOG=$(iverilog -o $output_file -c $full_path 2>&1 > /dev/null)
+    
+    echo_log "Compilation in Progress ..."
     echo_log "$ERROR_LOG"
 
     if [ "$ERROR_LOG" == "" ];
@@ -24,11 +30,17 @@ file_gen () {
         echo_log "Compiled Output File : $output_file"
     else
         echo_log "ERROR : Compilation Failed"
+        exit_shell
     fi
+
+    #sim
+    source sim.sh $output_file
 
 
   else
     echo_log "File doesn't exist"
+    echo_log "ERROR : Compilation Failed"
+    exit_shell
   fi
 }
 
@@ -107,7 +119,7 @@ do
   case "$1" in
     -f) while [ -n "$2" ]
         do          
-          echo_log "Found the -f option, with parameter value $2"
+          echo_log "Found the -f option, with file name $2"
           file_gen $2
           shift
         done;;
