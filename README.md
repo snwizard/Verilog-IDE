@@ -48,7 +48,7 @@ To deploy this project run
 ## Process Library files
 
 The process library files for synthesis are located in the ***`lib/`*** directory.  
-In order to point to a new Library the following line in  ***setup/setup.sh*** needs to be updated.
+In order to point to a new Library the following line in  ***`setup/setup.sh`*** needs to be updated.
 
 
 ```bash
@@ -58,9 +58,9 @@ In order to point to a new Library the following line in  ***setup/setup.sh*** n
 
 ## Updating verilog source files
 
-The verilog source code needs to be updated under the ***src/*** directory.  
-All the verilog files in project need to be updated in the corresponding ***top_file*** and the name of top file has be same as the top module of the project.  
-All ****.v*** file names have to be same as the module name in the file.
+The verilog source code needs to be updated under the ***`src/`*** directory.  
+All the verilog files in project need to be updated in the corresponding ***`top_file`*** and the name of top file has be same as the top module of the project.  
+All ***`*.v`*** file names have to be same as the module name in the file.
 
 
 
@@ -68,11 +68,11 @@ All ****.v*** file names have to be same as the module name in the file.
 
 The verilog source code can be compiled and run by using the commands mentioned below. 
 
-***top_file*** should contain the list of all the verilog source files to be compiled.  
-The compiled files are generated in the ***target/*** directory with extension ****.vvp***  
-The waveform dump is generated in the ***target/*** directory with extension ****.vcd***  
-The schematic is generated in the ***target/*** directory with extension ****.svg***  
-The synthesized netlist is generated in the ***target/*** directory with extension ****_synth.v***  
+***`top_file`*** should contain the list of all the verilog source files to be compiled.  
+The compiled files are generated in the ***`target/`*** directory with extension ***`*.vvp`***  
+The waveform dump is generated in the ***`target/`*** directory with extension ***`*.vcd`***  
+The schematic is generated in the ***`target/`*** directory with extension ***`*.svg`***  
+The synthesized netlist is generated in the ***`target/`*** directory with extension ***`*_synth.v`***  
 
 The verilog source code can be compiled and simulated by using the following command. 
 
