@@ -6,7 +6,7 @@ This repo contains verilog tutorial projects
 
 ## Authors
 
-- [@snwizard](https://github.com/snwizard/)
+- [`@snwizard`](https://github.com/snwizard/)
 
 
 ## Prerequisites
@@ -47,7 +47,7 @@ To deploy this project run
 
 ## Process Library files
 
-The process library files for synthesis are located in the `***lib/***` directory.  
+The process library files for synthesis are located in the ***`lib/`*** directory.  
 In order to point to a new Library the following line in  ***setup/setup.sh*** needs to be updated.
 
 
