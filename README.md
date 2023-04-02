@@ -48,7 +48,8 @@ To deploy this project run
 ## Process Library files
 
 The process library files for synthesis are located in the ***`lib/`*** directory.  
-In order to point to a new Library the following line in  ***`setup/setup.sh`*** needs to be updated.
+In order to point to a new Library the following line in  ***`setup/setup.sh`*** needs to be updated.  
+For more libraries refer to [`The SkyWater Open Source PDK`](https://github.com/google/skywater-pdk)
 
 
 ```bash
