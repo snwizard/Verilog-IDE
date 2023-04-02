@@ -1,0 +1,22 @@
+# read design
+read_verilog /Users/souradeep/Projects/Verilog_tutorial/src/counter/counter.v
+#hierarchy -top up3down5
+
+# the high-level stuff
+#proc; fsm; opt; memory; opt
+
+# mapping to internal cell library
+#techmap; opt
+synth -top counter
+
+# mapping flip-flops to mycells.lib
+dfflibmap -liberty /Users/souradeep/Projects/Verilog_tutorial/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# mapping logic to mycells.lib
+abc -liberty /Users/souradeep/Projects/Verilog_tutorial/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# cleanup
+clean
+
+# write synthesized design
+write_verilog  counter_synth.v

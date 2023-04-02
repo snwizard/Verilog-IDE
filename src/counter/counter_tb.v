@@ -7,7 +7,6 @@ module test;
      # 11 reset = 0;
      # 29 reset = 1;
      # 11 reset = 0;
-     # 100 $stop;
   end
 
   /* Make a regular pulsing clock. */
@@ -26,7 +25,7 @@ module test;
   end  
 
   initial begin
-    $dumpfile("test.vcd");
+    $dumpfile("counter.vcd");
     $dumpvars(0,test);
   end
 endmodule // test
