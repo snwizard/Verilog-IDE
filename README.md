@@ -11,7 +11,29 @@ This repo contains verilog tutorial projects
 
 ## Prerequisites
 
-To deploy this
+icarus-verilog : Verilog compilation and simulation tool
+
+```bash
+  brew install icarus-verilog
+```
+
+gtkwave : GTK+ based simulation wave viewer
+
+```bash
+  brew install --cask gtkwave
+```
+
+yosys : Framework for Verilog RTL synthesis
+
+```bash
+  brew install yosys
+```
+
+netlistsvg : draws an SVG schematic from a yosys JSON netlist
+
+```bash
+  npm install -g netlistsvg
+```
 
 ## Deployment
 
@@ -37,7 +59,7 @@ In order to point to a new Library the following line in  ***setup/setup.sh*** n
 ## Updating verilog source files
 
 The verilog source code needs to be updated under the ***src/*** directory.  
-All the verilog files in project need to be updated in the corresponding ***top_file*** and the name of top file has be same as the top module of the project.
+All the verilog files in project need to be updated in the corresponding ***top_file*** and the name of top file has be same as the top module of the project.  
 All ****.v*** file names have to be same as the module name in the file.
 
 
