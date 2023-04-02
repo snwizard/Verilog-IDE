@@ -29,7 +29,7 @@ This repo contains verilog tutorial projects
   brew install yosys
 ```
 
-* [`netlistsvg`](https://github.com/nturley/netlistsvg) : draws an SVG schematic from a yosys JSON netlist
+* [`netlistsvg`](https://github.com/nturley/netlistsvg) : draws an SVG schematic from a yosys JSON netlist. [`online demo`](https://neilturley.dev/netlistsvg/)
 
 ```bash
   npm install -g netlistsvg
