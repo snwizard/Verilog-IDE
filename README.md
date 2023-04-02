@@ -11,25 +11,25 @@ This repo contains verilog tutorial projects
 
 ## Prerequisites
 
-icarus-verilog : Verilog compilation and simulation tool
+[icarus-verilog](https://github.com/steveicarus/iverilog) : Verilog compilation and simulation tool
 
 ```bash
   brew install icarus-verilog
 ```
 
-gtkwave : GTK+ based simulation wave viewer
+[gtkwave](https://gtkwave.sourceforge.net) : GTK+ based simulation wave viewer
 
 ```bash
   brew install --cask gtkwave
 ```
 
-yosys : Framework for Verilog RTL synthesis
+[``yosys``](https://github.com/YosysHQ/yosys) : Framework for Verilog RTL synthesis
 
 ```bash
   brew install yosys
 ```
 
-netlistsvg : draws an SVG schematic from a yosys JSON netlist
+* [`netlistsvg`](https://github.com/nturley/netlistsvg) : draws an SVG schematic from a yosys JSON netlist
 
 ```bash
   npm install -g netlistsvg
