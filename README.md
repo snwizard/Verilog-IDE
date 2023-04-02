@@ -93,3 +93,8 @@ The verilog source code can be synthesized by using the following command.
   compile.sh -s <top_file path>
 ```
 
+
+## Appendix
+
+[`Setup FPGA development workflow`](https://nishtahir.com/a-mostly-free-fpga-development-workflow-for-macos/)
+[`readme.so`](https://readme.so)
