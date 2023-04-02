@@ -11,19 +11,19 @@ This repo contains verilog tutorial projects
 
 ## Prerequisites
 
-[icarus-verilog](https://github.com/steveicarus/iverilog) : Verilog compilation and simulation tool
+* [`icarus-verilog`](https://github.com/steveicarus/iverilog) : Verilog compilation and simulation tool
 
 ```bash
   brew install icarus-verilog
 ```
 
-[gtkwave](https://gtkwave.sourceforge.net) : GTK+ based simulation wave viewer
+* [`gtkwave`](https://gtkwave.sourceforge.net) : GTK+ based simulation wave viewer
 
 ```bash
   brew install --cask gtkwave
 ```
 
-[``yosys``](https://github.com/YosysHQ/yosys) : Framework for Verilog RTL synthesis
+* [`yosys`](https://github.com/YosysHQ/yosys) : Framework for Verilog RTL synthesis
 
 ```bash
   brew install yosys
@@ -47,7 +47,7 @@ To deploy this project run
 
 ## Process Library files
 
-The process library files for synthesis are located in the ***lib/*** directory.  
+The process library files for synthesis are located in the `***lib/***` directory.  
 In order to point to a new Library the following line in  ***setup/setup.sh*** needs to be updated.
 
 
