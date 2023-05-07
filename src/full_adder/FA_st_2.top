@@ -1,0 +1,3 @@
+src/full_adder/FA_st_2.v
+src/half_adder/HA.v
+src/full_adder/FA_tb.v
