@@ -60,8 +60,9 @@ For more libraries refer to [`The SkyWater Open Source PDK`](https://github.com/
 ## Updating verilog source files
 
 The verilog source code needs to be updated under the ***`src/`*** directory.  
-All the verilog files in project need to be updated in the corresponding ***`top_file`*** and the name of top file has be same as the top module of the project.  
-All ***`*.v`*** file names have to be same as the module name in the file.
+All the verilog files in project need to be updated in the corresponding ***`top_file`*** and the name of top file has to be same as the top module of the project.  
+All ***`*.v`*** file names have to be same as the module name in the file.  
+All testbench files must have ***`*_tb.v`*** naming format.
 
 
 
