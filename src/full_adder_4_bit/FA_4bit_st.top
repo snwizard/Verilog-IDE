@@ -1,0 +1,4 @@
+src/full_adder/FA_st_2.v
+src/half_adder/HA.v
+src/full_adder_4_bit/FA_4bit_st.v
+src/full_adder_4_bit/FA_4bit_tb.v
