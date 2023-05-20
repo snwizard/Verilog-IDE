@@ -1,5 +1,5 @@
 
-# Verilog Tutorial
+# Verilog IDE
 
 This repo contains verilog tutorial projects
 
