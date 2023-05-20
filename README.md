@@ -44,7 +44,7 @@ This repo contains verilog tutorial projects
   sudo apt install yosys
 ```
 
-* [`netlistsvg`](https://github.com/nturley/netlistsvg) : draws an SVG schematic from a yosys JSON netlist. [`online demo`](https://neilturley.dev/netlistsvg/)
+* [`netlistsvg`](https://github.com/nturley/netlistsvg) : draws an SVG schematic from a yosys JSON netlist. 
 
 &emsp;&emsp;`macOS:`
 ```bash
