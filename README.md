@@ -24,20 +24,36 @@ This repo contains verilog tutorial projects
 
 * [`gtkwave`](https://gtkwave.sourceforge.net) : GTK+ based simulation wave viewer
 
+&emsp;&emsp;`macOS:`
 ```bash
   brew install --cask gtkwave
+```
+&emsp;&emsp;`Ubuntu:`
+```bash
+  sudo apt install gtkwave
 ```
 
 * [`yosys`](https://github.com/YosysHQ/yosys) : Framework for Verilog RTL synthesis
 
+&emsp;&emsp;`macOS:`
 ```bash
   brew install yosys
+```
+&emsp;&emsp;`Ubuntu:`
+```bash
+  sudo apt install yosys
 ```
 
 * [`netlistsvg`](https://github.com/nturley/netlistsvg) : draws an SVG schematic from a yosys JSON netlist. [`online demo`](https://neilturley.dev/netlistsvg/)
 
+&emsp;&emsp;`macOS:`
 ```bash
   npm install -g netlistsvg
+```
+&emsp;&emsp;`Ubuntu:`
+```bash
+  sudo apt install npm
+  sudo npm install -g netlistsvg
 ```
 
 ## Deployment
