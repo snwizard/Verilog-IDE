@@ -11,10 +11,14 @@ This repo contains verilog tutorial projects
 
 ## Prerequisites
 
-* [`icarus-verilog`](https://github.com/steveicarus/iverilog) : Verilog compilation and simulation tool
-
+* [`icarus-verilog`](https://github.com/steveicarus/iverilog) : Verilog compilation and simulation tool  
+macOS:
 ```bash
   brew install icarus-verilog
+```
+Ubuntu:
+```bash
+  sudo apt install iverilog
 ```
 
 * [`gtkwave`](https://gtkwave.sourceforge.net) : GTK+ based simulation wave viewer
