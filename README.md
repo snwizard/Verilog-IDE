@@ -12,11 +12,12 @@ This repo contains verilog tutorial projects
 ## Prerequisites
 
 * [`icarus-verilog`](https://github.com/steveicarus/iverilog) : Verilog compilation and simulation tool  
-macOS:
+
+&emsp;&emsp;`macOS:`
 ```bash
   brew install icarus-verilog
-```
-Ubuntu:
+```   
+&emsp;&emsp;`Ubuntu:`
 ```bash
   sudo apt install iverilog
 ```
@@ -83,19 +84,19 @@ The synthesized netlist is generated in the ***`target/`*** directory with exten
 The verilog source code can be compiled and simulated by using the following command. 
 
 ```bash
-  compile.sh -c <top_file path>
+  compile_synth.sh -c <top_file path>
 ```
 
 The verilog source code can be compiled, simulated and synthesized by using the following command. 
 
 ```bash
-  compile.sh -cs <top_file path>
+  compile_synth.sh -cs <top_file path>
 ```
 
 The verilog source code can be synthesized by using the following command. 
 
 ```bash
-  compile.sh -s <top_file path>
+  compile_synth.sh -s <top_file path>
 ```
 
 
