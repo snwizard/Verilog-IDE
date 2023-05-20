@@ -5,6 +5,10 @@ module FA_4bit_tb;
     reg cin;
     wire [3:0] s;
     wire cout;
+    wire [3:0] s_ref;
+    wire cout_ref;
+
+    assign {cout_ref,s_ref}=a+b+cin;
 
     FA_4bit_st  FA_4bit(s,cout,a,b,cin);
 
@@ -14,11 +18,15 @@ module FA_4bit_tb;
         a=0;
         b=0;
         cin=0; //a,b,cin set a time 0
-        #10 a=4'b1001;
-        #10 b=4'b1110;
-        #10 cin=1;
-        #10 a=4'b0111;
-        #10 b=4'b1010;
+        #10
+        repeat(16) begin
+            a=a+1;
+            repeat(16) begin
+                b=b+1;
+                repeat(2) 
+                    #10 cin=cin+1;
+            end
+        end
         #10 $finish;
     end
 
