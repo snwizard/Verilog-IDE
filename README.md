@@ -115,6 +115,35 @@ The verilog source code can be synthesized by using the following command.
   compile_synth.sh -s <top_file path>
 ```
 
+## Vscode setup
+
+Download and install vscode from [`Visual Studio Code's website`](https://code.visualstudio.com/Download). We will use the following extensions to integrate the workflow in a single window.  
+
+* [`Verilog-HDL/SystemVerilog/Bluespec SystemVerilog`](https://marketplace.visualstudio.com/items?itemName=mshr-h.VerilogHDL) for verilog syntax highlighting and linting
+* [`SVG Previewer`](https://marketplace.visualstudio.com/items?itemName=vitaliymaz.vscode-svg-previewer) to preview the circuit schematic
+* [`WaveTrace`](https://marketplace.visualstudio.com/items?itemName=wavetrace.wavetrace) waveform viewer (gtkwave works fine but wavetrace is integrated in vscode so the waveform can be viewed in the same window in which we code)
+
+
+## Example
+
+Follow the ***`Prerequisites`*** and ***`Vscode setup`*** steps to setup the IDE.  
+
+* Launch vscode and open the git repo. Run the following command from vscode terminal (needs to be run only once after launching vscode)
+```bash
+   source setup/setup.sh
+```
+
+* We will compile and synthesize the RTL source code `src/counter/counter.v`. This path is added to the top file `src/counter/counter.top`. The top file also includes the test-bench file path.  
+
+* We need to run the following command from vscode terminal to compile, simulate and synthesize the rtl code.
+```bash
+   compile_synth.sh -cs src/counter/counter.top
+```
+
+* The results are generated in the `target/` directory. `target/counter_counter_schematic.svg` has the circuit schematic and can be viewed using the `SVG Previewer` extension in vscode as shown below
+
+* `target/counter_counter_sim.log` contains the simulation logs. `target/counter.vcd` has the waveform dump which can be viewed using `WaveTrace` vscode extension as shown below
+
 
 ## Appendix
 
