@@ -134,6 +134,8 @@ Follow the ***`Prerequisites`*** and ***`Vscode setup`*** steps to setup the IDE
 ```bash
    source setup/setup.sh
 ```
+![Screenshot from 2023-05-21 23-24-06](https://github.com/snwizard/Verilog-IDE/assets/39489729/4a9deff5-64a9-4e64-83c9-e05649be0ee6)
+
 
 * We will compile and synthesize the RTL source code `src/counter/counter.v`. This path is added to the top file `src/counter/counter.top`. The top file also includes the test-bench file path.  
 
@@ -142,10 +144,13 @@ Follow the ***`Prerequisites`*** and ***`Vscode setup`*** steps to setup the IDE
    compile_synth.sh -cs src/counter/counter.top
 ```
 
-* The results are generated in the `target/` directory. `target/counter_counter_schematic.svg` has the circuit schematic and can be viewed using the `SVG Previewer` extension in vscode as shown below
+* The results are generated in the `target/` directory. `target/counter_counter_schematic.svg` has the circuit schematic which can be viewed using the `SVG Previewer` extension in vscode as shown below
+
+![Screenshot from 2023-05-21 23-26-56](https://github.com/snwizard/Verilog-IDE/assets/39489729/b6f3cf1a-44a0-4d52-8e5b-b9f770e33ccd)
 
 * `target/counter_counter_sim.log` contains the simulation logs. `target/counter.vcd` has the waveform dump which can be viewed using `WaveTrace` vscode extension as shown below
 
+![Screenshot from 2023-05-21 23-30-23](https://github.com/snwizard/Verilog-IDE/assets/39489729/c869e543-698c-429b-aac7-e20db34a021b)
 
 ## Appendix
 
