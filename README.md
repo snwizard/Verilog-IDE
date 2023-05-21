@@ -1,7 +1,7 @@
 
 # Verilog IDE
 
-Verilog IDE is an automated Verilog development environment for semiconductor enthusiasts. Once the RTL design is ready a single command generates the simulation waveform dump, synthesised netlist and a circuit svg schematic. This project has been tested on macOS, Ubuntu and Windows11(with Ubuntu WSL).
+Verilog IDE is an automated Verilog development environment for semiconductor enthusiasts. Once the RTL design is ready a single command generates the simulation waveform dump, synthesized netlist and a circuit schematic. This project has been tested on macOS, Ubuntu and Windows11(with Ubuntu WSL).
 
 
 ## Authors
