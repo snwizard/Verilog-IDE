@@ -135,7 +135,7 @@ Follow the ***`Prerequisites`*** and ***`Vscode setup`*** steps to setup the IDE
 
 * We will compile and synthesize the RTL source code `src/counter/counter.v`. This path is added to the top file `src/counter/counter.top`. The top file also includes the test-bench file path.  
 
-* We need to run the following command from vscode terminal to compile, simulate and synthesize the rtl code.
+* Run the following command from vscode terminal to compile, simulate and synthesize the rtl code.
 ```bash
    compile_synth.sh -cs src/counter/counter.top
 ```
