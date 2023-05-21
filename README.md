@@ -123,6 +123,8 @@ Download and install vscode from [`Visual Studio Code's website`](https://code.v
 * [`SVG Previewer`](https://marketplace.visualstudio.com/items?itemName=vitaliymaz.vscode-svg-previewer) to preview the circuit schematic
 * [`WaveTrace`](https://marketplace.visualstudio.com/items?itemName=wavetrace.wavetrace) waveform viewer (gtkwave works fine but wavetrace is integrated in vscode so the waveform can be viewed in the same window in which we code)
 
+![Screenshot from 2023-05-21 22-52-01](https://github.com/snwizard/Verilog-IDE/assets/39489729/7117c10a-2a09-4181-b555-6726ebbedb48)
+
 
 ## Example
 
