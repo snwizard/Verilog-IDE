@@ -24,6 +24,8 @@ name=${base_name%%.*} #name of file without extension
 schematic_name="$dir_name"_"$name"_schematic.json
 schematic_svg_name="$dir_name"_"$name"_schematic.svg
 synth_name="$dir_name"_"$name"_synth.v
+synth_schematic_name="$dir_name"_"$name"_synth_schematic.json
+synth_schematic_svg_name="$dir_name"_"$name"_synth_schematic.svg
 
 #generate $YOSYS_RUN ----start
 IFS_OLD=$IFS
@@ -37,7 +39,7 @@ IFS=$IFS_OLD
 
 echo "prep -top $name; write_json $schematic_name"  >> $YOSYS_RUN
 if [ $SYNTH == 1 ]; then
-    echo "synth -top $name" >> $YOSYS_RUN
+    echo "synth -top $name; write_json $synth_schematic_name" >> $YOSYS_RUN
     echo "dfflibmap -liberty $LIB" >> $YOSYS_RUN
     echo "abc -liberty $LIB" >> $YOSYS_RUN
     echo "clean" >> $YOSYS_RUN
@@ -51,3 +53,7 @@ echo "$Y_LOG"
 echo "$Y_LOG" >> $YOSYS_LOG
 
 netlistsvg $schematic_name -o $schematic_svg_name 
+
+if [ $SYNTH == 1 ]; then
+    netlistsvg $synth_schematic_name -o $synth_schematic_svg_name
+fi
