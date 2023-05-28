@@ -1,0 +1,2 @@
+src/decoder/decoder_2_4.v
+src/decoder/decoder_2_4_tb.v
