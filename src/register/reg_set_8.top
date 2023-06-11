@@ -1,0 +1,2 @@
+src/register/reg_set_8.v
+src/register/reg_set_8_tb.v

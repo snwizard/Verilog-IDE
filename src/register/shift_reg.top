@@ -1,0 +1,2 @@
+src/register/shift_reg.v
+src/register/shift_reg_tb.v
