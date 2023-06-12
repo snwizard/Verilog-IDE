@@ -1,0 +1,2 @@
+src/seven_segment_decoder/seven_seg_dec.v
+src/seven_segment_decoder/seven_seg_dec_tb.v
