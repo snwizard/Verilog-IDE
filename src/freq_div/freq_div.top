@@ -1,0 +1,5 @@
+src/freq_div/freq_div_2.v
+src/freq_div/freq_div_4.v
+src/freq_div/freq_div_3.v
+src/freq_div/freq_div.v
+src/freq_div/freq_div_tb.v
