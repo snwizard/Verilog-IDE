@@ -1,0 +1,2 @@
+src/fifo/fifo_single_clk.v
+src/fifo/fifo_single_clk_tb.v
