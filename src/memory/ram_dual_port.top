@@ -1,0 +1,2 @@
+src/memory/ram_dual_port.v
+src/memory/ram_dual_port_tb.v
