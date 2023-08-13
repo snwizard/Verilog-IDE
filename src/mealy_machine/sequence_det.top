@@ -1,0 +1,2 @@
+src/mealy_machine/sequence_det.v
+src/mealy_machine/sequence_det_tb.v
