@@ -1,0 +1,2 @@
+src/moore_machine/seq_detector.v
+src/moore_machine/seq_detector_tb.v
