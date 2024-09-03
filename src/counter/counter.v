@@ -13,6 +13,6 @@ module counter(out, clk, reset);
     if (reset)
       out <= 0;
     else
-      out <= out + 1;
+      out <= out +  1;
 
 endmodule // counter
